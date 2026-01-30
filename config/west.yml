@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: myoled
-      url-base: https://github.com/simply_miquel
 
   projects:
     - name: zmk
@@ -12,7 +10,7 @@ manifest:
       import: app/west.yml
 
     - name: zmk-nice-oled
-      remote: myoled
+      url: https://github.com/Miqueler/zmk-nice-oled-patched
       revision: main
       path: modules/zmk-nice-oled
 
